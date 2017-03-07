@@ -12,6 +12,7 @@ app.get('/', function (request, response, next){
   // console.log(request.params.pupID);
   console.log(request.method)
   response.send('<h3>Welcome to Mandi and Madeleine\'s New Page</h3>');
+  //mandi change
 })
 
 

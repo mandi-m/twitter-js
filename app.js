@@ -4,6 +4,9 @@ const app = express();  //creates an instance of the express application, develo
 
 //can combine the lines
 //const app = require('express')();
+app.use('/', function(request, response, next) {
+  console.log('HTTP verb: ' + request.method + ' route: ' + request.route);
+});
 
 app.get('/', function (request, response, next){
   // console.log(request.params.pupID);
